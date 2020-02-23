@@ -24,4 +24,4 @@ If the device is less than `pixels` pixels wide, `cards` will be displayed as a 
 
 ### Options
 - `threshold` Threshold, in pixels (with or without 'px'), for `horizontal-stack`
-- `cards` Cards to render; works particularly well with `vertical-stack`s
+- `cards` Cards to render; works particularly well as a `vertical-stack` container
