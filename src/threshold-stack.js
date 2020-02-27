@@ -137,8 +137,10 @@ class ThresholdStack extends LitElement {
   }
 
   setConfig(config) {
-    this.config = config;
-    this.config.threshold = parseInt(this.config.threshold) || 800;
+    this.config = {
+      threshold: 800,
+      ...config
+    };
 
     this.cards = {};
     for (let k in config.cards) {
