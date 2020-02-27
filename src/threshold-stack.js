@@ -149,7 +149,7 @@ class ThresholdStack extends LitElement {
     }
 
     window.addEventListener('resize', el => {
-      this.shadowRoot.querySelector('#root').className = window.matchMedia(`(min-width: ${this.config.threshold}px)`).matches ? 'horizontal' : 'vertical';
+      this.shadowRoot.querySelector('#root').className = window.matchMedia(`(min-width: ${parseInt(this.config.threshold)}px)`).matches ? 'horizontal' : 'vertical';
     });
   }
 
@@ -163,7 +163,7 @@ class ThresholdStack extends LitElement {
 
   render() {
     return html`
-      <div id="root" class="${window.matchMedia(`(min-width: ${this.config.threshold}px)`).matches ? 'horizontal' : 'vertical'}">
+      <div id="root" class="${window.matchMedia(`(min-width: ${parseInt(this.config.threshold)}px)`).matches ? 'horizontal' : 'vertical'}">
         ${Object.keys(this.cards).map((k) =>
           html`
             ${this.cards[k]}
