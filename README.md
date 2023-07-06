@@ -23,5 +23,5 @@ If the device is at least `pixels` pixels wide, `cards` will be displayed as a `
 If the device is less than `pixels` pixels wide, `cards` will be displayed as a `vertical-stack`.
 
 ### Options
-- `threshold` Threshold in pixels for `horizontal-stack`. Default: `600px`
+- `threshold` Threshold in pixels for `horizontal-stack`. Default: `800px`
 - `cards` **Required** Cards to render; works particularly well as a `vertical-stack` container
